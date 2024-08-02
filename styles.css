@@ -1,0 +1,74 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(142, 31, 31, 0.65), rgba(142, 31, 31, 0.65)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(9, 69, 40, 0.945); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Ensures profiles section takes up available space */
+}
+
+.profile-card {
+    background: rgba(212, 41, 41, 0.9); /* Slightly transparent background for each card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(244, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-card h2 {
+    margin: 10px 0 5px;
+}
+
+.profile-card p {
+    margin: 5px 0;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(6, 80, 44, 0.945); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
